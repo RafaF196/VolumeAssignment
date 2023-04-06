@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>827</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>827</width>
+    <height>618</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="Widget">
+   <property name="minimumSize">
+    <size>
+     <width>827</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>600</width>
+     <height>600</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="GLWidget" name="glwidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>600</width>
+        <height>600</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="Configuration">
+      <item>
+       <widget class="QGroupBox" name="TreeOptions">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Options</string>
+        </property>
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>30</y>
+           <width>181</width>
+           <height>242</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="transferOptions">
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="TTitle">
+            <property name="text">
+             <string>Transfer RGB Options</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="12" column="0">
+             <widget class="QLabel" name="label_41">
+              <property name="text">
+               <string>Max</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QSlider" name="greenmin_slider">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>30</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QSlider" name="redmax_slider">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="singleStep">
+               <number>1</number>
+              </property>
+              <property name="sliderPosition">
+               <number>30</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="2">
+             <widget class="QLabel" name="bluemax_label">
+              <property name="text">
+               <string>1.00</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="0">
+             <widget class="QLabel" name="label_40">
+              <property name="text">
+               <string>Min</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="redmin_label">
+              <property name="text">
+               <string>0.00</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <widget class="QSlider" name="bluemin_slider">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>60</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="1">
+             <widget class="QSlider" name="bluemax_slider">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="singleStep">
+               <number>1</number>
+              </property>
+              <property name="sliderPosition">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="0" colspan="3">
+             <widget class="QLabel" name="label_36">
+              <property name="text">
+               <string>Green component</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLabel" name="redmax_label">
+              <property name="text">
+               <string>0.30</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_38">
+              <property name="text">
+               <string>Max</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Min</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QSlider" name="greenmax_slider">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="singleStep">
+               <number>1</number>
+              </property>
+              <property name="value">
+               <number>60</number>
+              </property>
+              <property name="sliderPosition">
+               <number>60</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="3">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Red component</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0" colspan="3">
+             <widget class="QLabel" name="label_39">
+              <property name="text">
+               <string>Blue component</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QLabel" name="greenmax_label">
+              <property name="text">
+               <string>0.60</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSlider" name="redmin_slider">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="2">
+             <widget class="QLabel" name="bluemin_label">
+              <property name="text">
+               <string>0.60</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_37">
+              <property name="text">
+               <string>Min</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QLabel" name="greenmin_label">
+              <property name="text">
+               <string>0.30</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Max</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="9" column="0">
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>290</y>
+           <width>181</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="lightOptions">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label_46">
+              <property name="text">
+               <string>Light Coordinates (XYZ)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="gridLayout_11">
+              <item row="1" column="0">
+               <widget class="QDial" name="dialx">
+                <property name="minimum">
+                 <number>-100</number>
+                </property>
+                <property name="maximum">
+                 <number>100</number>
+                </property>
+                <property name="value">
+                 <number>5</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QDial" name="dialy">
+                <property name="minimum">
+                 <number>-100</number>
+                </property>
+                <property name="maximum">
+                 <number>100</number>
+                </property>
+                <property name="value">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="x_label">
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <property name="text">
+                 <string>1.0</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QDial" name="dialz">
+                <property name="minimum">
+                 <number>-100</number>
+                </property>
+                <property name="maximum">
+                 <number>100</number>
+                </property>
+                <property name="value">
+                 <number>-10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLabel" name="y_label">
+                <property name="text">
+                 <string>2.0</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLabel" name="z_label">
+                <property name="text">
+                 <string>-2.0</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>22</y>
+           <width>140</width>
+           <height>3</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>282</y>
+           <width>140</width>
+           <height>3</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>410</y>
+           <width>140</width>
+           <height>3</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>827</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+    <addaction name="actionLoad"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QWidget</extends>
+   <header>glwidget.h</header>
+   <container>1</container>
+   <slots>
+    <signal>SetFaces(QString)</signal>
+    <signal>SetVertices(QString)</signal>
+    <signal>SetFramerate(QString)</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <slots>
+  <signal>updated_plane(double,double,double,double,bool)</signal>
+  <slot>toggle_transfer_function_dialog()</slot>
+ </slots>
+</ui>

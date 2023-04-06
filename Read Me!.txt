@@ -1,0 +1,3 @@
+As you remember I had to change a few things from the skeleton to make it run on Windows.
+
+So, before testing it (I assume on Linux) you should change the shader path. Also remember that you can enable mipmap once again when loading the 3D texture.
